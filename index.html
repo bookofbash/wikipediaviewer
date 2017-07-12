@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Wikipedia Viewer</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/css/bootstrap.min.css" integrity="sha384-rwoIResjU2yc3z8GV/NPeZWAv56rSmLldC3R/AZzGRnGxQQKnKkoFVhFQhNUwEyJ" crossorigin="anonymous">
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/tether/1.4.0/js/tether.min.js" integrity="sha384-DztdAPBWPRXSA/3eYEEUWrWCy7G5KFbe8fFjk5JAIxUYHKkDx6Qin1DkWx51bBrb" crossorigin="anonymous"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-alpha.6/js/bootstrap.min.js" integrity="sha384-vBWWzlZJ8ea9aCX4pEW3rVHjgjt7zpkNpZk+02D9phzyeVkE+jo0ieGizqPLForn" crossorigin="anonymous"></script>
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<script src="https://rawgithub.com/darkskyapp/skycons/master/skycons.js"></script>
+	<script type="text/javascript" src="scripts.js"></script>
+</head>
+<body>
+<div class="container-flex" id="main">
+	<div class= "row">
+		<div class= "col" id ="random"><button><a href="https://en.wikipedia.org/wiki/Special:Random" target = "_blank">Click here for a random article</a></button></div>
+	</div>
+
+<form onsubmit="submitFn(this, event);">
+	<div class="search-wrapper">
+		<div class="input-holder">
+			<input type="text" class="search-input" id ="search-input" placeholder="Type to search" />
+			<button class="search-icon" onclick="searchToggle(this, event);"><span></span></button>
+		</div>
+		<span class="close" onclick="searchToggle(this, event);"></span>
+		<div class="result-container"></div>
+	</div>
+</form>
+</div>
+
+
+
+
+
+
+
+
+</body>
+</html>
